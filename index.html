@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Banking Form</title>
+	<link rel="stylesheet" type="text/css" href="./main.css">
 </head>
 <body>
 
@@ -25,6 +26,75 @@
 	</div>
 
 </article>
+
+	
+</head>
+<body>
+
+<div>
+	<h1>Banking Form</h1>
+	<div>
+		<label for="firstName">First Name:</label><br />
+		<input type="text" name="firstName"><br />
+
+		<label for="middleInitial">Middle Initial:</label><br />
+		<input type="text" name="middleInitial"><br />
+
+		<label for="lastName">Last Name:</label><br />
+		<input type="text" name="lastName"><br />
+
+		<label for="address">Address:</label><br />
+		<input type="text" name="address"><br />
+
+		<label for="occupation">Occupation:</label><br />
+		<input type="text" name="occupation"><br />
+
+		<label for="employer">Employer:</label><br />
+		<input type="text" name="employer"><br />
+
+		<label for="employerAddress">Employer Address:</label><br />
+		<input type="text" name="employerAddress"><br />
+
+		<label for="loanType">Loan Type:</label><br />
+		<select name="loanType" form="loan">
+		  <option value="commercial">Commercial</option>
+		  <option value="realEstate">Real estate</option>
+		  <option value="personal">Personal</option>
+		  <option value="mortgage">Mortgage</option>
+		</select><br />
+
+		<label for="requestedAmount">Requested Amount:</label><br />
+		<input type="text" name="requestedAmount"><br />
+
+		<label for="loanLength">Loan Length:</label><br />
+		<input type="radio" name="loanLength" value="fiveYears"> 5 years
+  		<input type="radio" name="loanLength" value="fifteenYears"> 15 years
+  		<input type="radio" name="loanLength" value="thirtyYears"> 30 years<br />
+
+  		<label for="specialConditions">Special Conditions:</label><br />
+		<input type="checkbox" name="specialConditions" value="downPayment"> I have a down payment
+  		<input type="checkbox" name="specialConditions" value="outOfStateResident"> Out-of-state resident
+  		<input type="checkbox" name="specialConditions" value="married"> Married
+  		<input type="checkbox" name="specialConditions" value="cosigned"> Loan will be co-signed<br />
+
+  		<label for="additionalComments">Additional Comments:</label><br />
+  		<textarea rows="4" cols="50" name="additionalComments" form="form">Enter text here...</textarea><br />
+
+  		<label for="emailAddress">Email Address:</label><br />
+  		<input type="text" name="emailAddress"><br />
+
+  		<label for="phone">Phone:</label><br />
+  		<input type="text" name="phone"><br />
+
+  		<label for="linkedInURL">LinkedIn URL:</label><br />
+  		<input type="text" name="linkedInURL"><br />
+
+  		<input type="submit" value="Send">
+		<input type="reset" value="Reset">
+
+	</div>
+</div>
+
 
 </body>
 </html>
